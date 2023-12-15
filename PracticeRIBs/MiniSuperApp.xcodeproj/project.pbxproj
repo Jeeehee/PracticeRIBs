@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10BF1F192B2BF93D0091C8D0 /* SuperPayDashBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F152B2BF93D0091C8D0 /* SuperPayDashBoardRouter.swift */; };
+		10BF1F1A2B2BF93D0091C8D0 /* SuperPayDashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F162B2BF93D0091C8D0 /* SuperPayDashBoardViewController.swift */; };
+		10BF1F1B2B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F172B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift */; };
+		10BF1F1C2B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F182B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift */; };
+		10BF1F1F2B2C11020091C8D0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F1E2B2C11020091C8D0 /* SnapKit */; };
+		10BF1F212B2C11020091C8D0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */; };
+		10BF1F242B2C11560091C8D0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F232B2C11560091C8D0 /* Then */; };
 		F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE512738468700FE9319 /* UIImage+Utils.swift */; };
 		F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE522738468700FE9319 /* Array+Utils.swift */; };
 		F57EBE562738468700FE9319 /* UITableView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE532738468700FE9319 /* UITableView+Utils.swift */; };
@@ -47,6 +54,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10BF1F152B2BF93D0091C8D0 /* SuperPayDashBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardRouter.swift; sourceTree = "<group>"; };
+		10BF1F162B2BF93D0091C8D0 /* SuperPayDashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardViewController.swift; sourceTree = "<group>"; };
+		10BF1F172B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardBuilder.swift; sourceTree = "<group>"; };
+		10BF1F182B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardInteractor.swift; sourceTree = "<group>"; };
 		F57EBE512738468700FE9319 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		F57EBE522738468700FE9319 /* Array+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 		F57EBE532738468700FE9319 /* UITableView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
@@ -93,12 +104,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */,
+				10BF1F1F2B2C11020091C8D0 /* SnapKit in Frameworks */,
+				10BF1F212B2C11020091C8D0 /* SnapKit-Dynamic in Frameworks */,
+				10BF1F242B2C11560091C8D0 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10BF1F142B2BF9210091C8D0 /* SuperPayDashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				10BF1F152B2BF93D0091C8D0 /* SuperPayDashBoardRouter.swift */,
+				10BF1F162B2BF93D0091C8D0 /* SuperPayDashBoardViewController.swift */,
+				10BF1F172B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift */,
+				10BF1F182B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift */,
+			);
+			path = SuperPayDashBoard;
+			sourceTree = "<group>";
+		};
 		F57F6AD926DB49E500C0117D /* AppHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +140,7 @@
 		F57F6ADA26DB49EA00C0117D /* FinanceHome */ = {
 			isa = PBXGroup;
 			children = (
+				10BF1F142B2BF9210091C8D0 /* SuperPayDashBoard */,
 				F57F6AE426DB4A2700C0117D /* FinanceHomeRouter.swift */,
 				F57F6AE526DB4A2700C0117D /* FinanceHomeViewController.swift */,
 				F57F6AE626DB4A2700C0117D /* FinanceHomeBuilder.swift */,
@@ -249,6 +275,9 @@
 			name = MiniSuperApp;
 			packageProductDependencies = (
 				F5829F6D26DB2DE900BFA8CD /* ModernRIBs */,
+				10BF1F1E2B2C11020091C8D0 /* SnapKit */,
+				10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */,
+				10BF1F232B2C11560091C8D0 /* Then */,
 			);
 			productName = SuperRedApp;
 			productReference = F5829F5526DB2BC400BFA8CD /* MiniSuperApp.app */;
@@ -279,6 +308,8 @@
 			mainGroup = F5829F4C26DB2BC400BFA8CD;
 			packageReferences = (
 				F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */,
+				10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				10BF1F222B2C11560091C8D0 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = F5829F5626DB2BC400BFA8CD /* Products */;
 			projectDirPath = "";
@@ -329,6 +360,8 @@
 				F5EAA219270B395900EF2B70 /* HomeWidgetView.swift in Sources */,
 				F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */,
 				F57F6AEB26DB4A2700C0117D /* FinanceHomeInteractor.swift in Sources */,
+				10BF1F192B2BF93D0091C8D0 /* SuperPayDashBoardRouter.swift in Sources */,
+				10BF1F1A2B2BF93D0091C8D0 /* SuperPayDashBoardViewController.swift in Sources */,
 				F5EAA21B270B395900EF2B70 /* AppHomeInteractor.swift in Sources */,
 				F57F6AE826DB4A2700C0117D /* FinanceHomeRouter.swift in Sources */,
 				F57F6AE926DB4A2700C0117D /* FinanceHomeViewController.swift in Sources */,
@@ -336,10 +369,12 @@
 				F5EAA21C270B395900EF2B70 /* AppHomeViewController.swift in Sources */,
 				F5EAA236270B3AA600EF2B70 /* UIColor+Super.swift in Sources */,
 				F5829F7926DB397300BFA8CD /* AppComponent.swift in Sources */,
+				10BF1F1C2B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift in Sources */,
 				F57F6AF026DB4A2D00C0117D /* ProfileHomeRouter.swift in Sources */,
 				F57EBE562738468700FE9319 /* UITableView+Utils.swift in Sources */,
 				F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */,
 				F5829F7426DB34AA00BFA8CD /* AppRootRouter.swift in Sources */,
+				10BF1F1B2B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +570,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		10BF1F222B2C11560091C8D0 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/DevYeom/ModernRIBs";
@@ -546,6 +597,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		10BF1F1E2B2C11020091C8D0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		10BF1F232B2C11560091C8D0 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10BF1F222B2C11560091C8D0 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		F5829F6D26DB2DE900BFA8CD /* ModernRIBs */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F5829F6C26DB2DE900BFA8CD /* XCRemoteSwiftPackageReference "ModernRIBs" */;
