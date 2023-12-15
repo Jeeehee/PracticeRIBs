@@ -14,6 +14,10 @@
 		10DDFDD02B2BDCE500FF7B9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DDFDCE2B2BDCE500FF7B9D /* LaunchScreen.storyboard */; };
 		10DDFDDB2B2BDCE500FF7B9D /* PracticeRIBsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDFDDA2B2BDCE500FF7B9D /* PracticeRIBsTests.swift */; };
 		10DDFDF72B2BDE5E00FF7B9D /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 10DDFDF62B2BDE5E00FF7B9D /* ModernRIBs */; };
+		10DDFDFD2B2BE7C100FF7B9D /* SuperPayDashBoardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDFDF92B2BE7C100FF7B9D /* SuperPayDashBoardRouter.swift */; };
+		10DDFDFE2B2BE7C100FF7B9D /* SuperPayDashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDFDFA2B2BE7C100FF7B9D /* SuperPayDashBoardViewController.swift */; };
+		10DDFDFF2B2BE7C100FF7B9D /* SuperPayDashBoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDFDFB2B2BE7C100FF7B9D /* SuperPayDashBoardBuilder.swift */; };
+		10DDFE002B2BE7C100FF7B9D /* SuperPayDashBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DDFDFC2B2BE7C100FF7B9D /* SuperPayDashBoardInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		10DDFDD12B2BDCE500FF7B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DDFDD62B2BDCE500FF7B9D /* PracticeRIBsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeRIBsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DDFDDA2B2BDCE500FF7B9D /* PracticeRIBsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeRIBsTests.swift; sourceTree = "<group>"; };
+		10DDFDF92B2BE7C100FF7B9D /* SuperPayDashBoardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardRouter.swift; sourceTree = "<group>"; };
+		10DDFDFA2B2BE7C100FF7B9D /* SuperPayDashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardViewController.swift; sourceTree = "<group>"; };
+		10DDFDFB2B2BE7C100FF7B9D /* SuperPayDashBoardBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardBuilder.swift; sourceTree = "<group>"; };
+		10DDFDFC2B2BE7C100FF7B9D /* SuperPayDashBoardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPayDashBoardInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,7 @@
 			children = (
 				10DDFDF32B2BDCF100FF7B9D /* Source */,
 				10DDFDF42B2BDD0F00FF7B9D /* Application */,
-				10DDFDC72B2BDCE400FF7B9D /* HomeViewController.swift */,
+				10DDFE022B2BE7F200FF7B9D /* Home */,
 			);
 			path = PracticeRIBs;
 			sourceTree = "<group>";
@@ -110,6 +118,26 @@
 				10DDFDC52B2BDCE400FF7B9D /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		10DDFE012B2BE7CD00FF7B9D /* SuperPayDashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				10DDFDF92B2BE7C100FF7B9D /* SuperPayDashBoardRouter.swift */,
+				10DDFDFA2B2BE7C100FF7B9D /* SuperPayDashBoardViewController.swift */,
+				10DDFDFB2B2BE7C100FF7B9D /* SuperPayDashBoardBuilder.swift */,
+				10DDFDFC2B2BE7C100FF7B9D /* SuperPayDashBoardInteractor.swift */,
+			);
+			path = SuperPayDashBoard;
+			sourceTree = "<group>";
+		};
+		10DDFE022B2BE7F200FF7B9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				10DDFE012B2BE7CD00FF7B9D /* SuperPayDashBoard */,
+				10DDFDC72B2BDCE400FF7B9D /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +248,11 @@
 			files = (
 				10DDFDC82B2BDCE400FF7B9D /* HomeViewController.swift in Sources */,
 				10DDFDC42B2BDCE400FF7B9D /* AppDelegate.swift in Sources */,
+				10DDFDFD2B2BE7C100FF7B9D /* SuperPayDashBoardRouter.swift in Sources */,
+				10DDFE002B2BE7C100FF7B9D /* SuperPayDashBoardInteractor.swift in Sources */,
+				10DDFDFF2B2BE7C100FF7B9D /* SuperPayDashBoardBuilder.swift in Sources */,
 				10DDFDC62B2BDCE400FF7B9D /* SceneDelegate.swift in Sources */,
+				10DDFDFE2B2BE7C100FF7B9D /* SuperPayDashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
