@@ -1,5 +1,7 @@
 import ModernRIBs
 import UIKit
+import SnapKit
+import Then
 
 protocol FinanceHomePresentableListener: AnyObject {
   // TODO: Declare properties and methods that the view controller can invoke to perform
@@ -11,6 +13,13 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
   
   weak var listener: FinanceHomePresentableListener?
   
+    private lazy var stackView = UIStackView().then {
+        $0.axis = .vertical
+        $0.alignment = .fill
+        $0.distribution = .equalSpacing
+        $0.spacing = 4
+    }
+    
   init() {
     super.init(nibName: nil, bundle: nil)
     
@@ -23,21 +32,23 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
     setupViews()
   }
   
-  private let label: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
   func setupViews() {
     title = "슈퍼페이"
     tabBarItem = UITabBarItem(title: "슈퍼페이", image: UIImage(systemName: "creditcard"), selectedImage: UIImage(systemName: "creditcard.fill"))
-    label.text = "Finance Home"
     view.backgroundColor = .systemBlue
-    view.addSubview(label)
-    NSLayoutConstraint.activate([
-      label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-      label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-    ])
+      
+    view.addSubview(stackView)
+      
+      stackView.snp.makeConstraints {
+          $0.top.left.right.equalToSuperview()
+      }
   }
+    
+    func addDashboard(_ view: ViewControllable) {
+        let vc = view.uiviewController
+        addChild(vc)
+        stackView.addArrangedSubview(vc.view)
+        vc.didMove(toParent: self)
+    }
+    
 }

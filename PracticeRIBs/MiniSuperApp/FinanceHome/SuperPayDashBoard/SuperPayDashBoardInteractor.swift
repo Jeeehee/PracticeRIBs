@@ -20,7 +20,7 @@ protocol SuperPayDashBoardListener: AnyObject {
     // TODO: Declare methods the interactor can invoke to communicate with other RIBs.
 }
 
-final class SuperPayDashBoardInteractor: PresentableInteractor<SuperPayDashBoardPresentable>, SuperPayDashBoardInteractable, SuperPayDashBoardPresentableListener {
+final class SuperPayDashBoardInteractor: PresentableInteractor<SuperPayDashBoardPresentable>, SuperPayDashBoardInteractable, SuperPayDashBoardPresentableListener, SuperPayDashBoardListener{
 
     weak var router: SuperPayDashBoardRouting?
     weak var listener: SuperPayDashBoardListener?

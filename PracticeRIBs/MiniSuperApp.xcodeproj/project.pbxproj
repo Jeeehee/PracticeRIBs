@@ -12,7 +12,6 @@
 		10BF1F1B2B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F172B2BF93D0091C8D0 /* SuperPayDashBoardBuilder.swift */; };
 		10BF1F1C2B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF1F182B2BF93D0091C8D0 /* SuperPayDashBoardInteractor.swift */; };
 		10BF1F1F2B2C11020091C8D0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F1E2B2C11020091C8D0 /* SnapKit */; };
-		10BF1F212B2C11020091C8D0 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */; };
 		10BF1F242B2C11560091C8D0 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 10BF1F232B2C11560091C8D0 /* Then */; };
 		F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE512738468700FE9319 /* UIImage+Utils.swift */; };
 		F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE522738468700FE9319 /* Array+Utils.swift */; };
@@ -105,7 +104,6 @@
 			files = (
 				F5829F6E26DB2DE900BFA8CD /* ModernRIBs in Frameworks */,
 				10BF1F1F2B2C11020091C8D0 /* SnapKit in Frameworks */,
-				10BF1F212B2C11020091C8D0 /* SnapKit-Dynamic in Frameworks */,
 				10BF1F242B2C11560091C8D0 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +274,6 @@
 			packageProductDependencies = (
 				F5829F6D26DB2DE900BFA8CD /* ModernRIBs */,
 				10BF1F1E2B2C11020091C8D0 /* SnapKit */,
-				10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */,
 				10BF1F232B2C11560091C8D0 /* Then */,
 			);
 			productName = SuperRedApp;
@@ -601,11 +598,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		10BF1F202B2C11020091C8D0 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 10BF1F1D2B2C11020091C8D0 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		10BF1F232B2C11560091C8D0 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
